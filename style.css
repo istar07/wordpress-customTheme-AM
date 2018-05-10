@@ -12,6 +12,7 @@
 .front-page .navbar-default .navbar-nav > li > a:hover, .front-page .navbar-default .navbar-nav > li > a:focus {
 	color: #FFFFFF;
 }
+
 	/* First Feature */
 	#first-feature {
 		background-image: url(http://aeso.io/img/cover.png);
@@ -40,6 +41,7 @@
 			margin-top: 40%;
 		}
 	}
+
 	/*Second Feature*/
 	#second-feature {
 		padding-top: 60px;
@@ -63,6 +65,7 @@
     	font-size: 1.35714286em;
     	line-height: 1.68421053em;
 	}
+
 	#second-feature a {
 		font-size: 0.85714286em;
     	line-height: 2.16666667em;
@@ -72,4 +75,35 @@
 	#second-feature img {
 		border-radius: 6px;
 		box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+	}
+
+	#third-feature {
+
+	}
+
+	#third-feature h3 {
+		font-size: 1.78571429em;
+    	line-height: 1.5em;
+    	color: #252525;
+	    font-weight: 300;
+	    margin-top: 0;
+	}
+
+	#third-feature .text-block {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#third-feature .text-block i {
+		font-size: 5.57142857em;
+		margin-left: 20%;
+		padding-bottom: 20px;
+	}
+
+	#third-feature .text-block h4 {
+		margin-top: 0.6842105263158em;
+		margin-bottom: 0.3421052631579em;
+		font-weight: 400;
+		font-size: 1.35714286em;
+    	color: #252525;
 	}
