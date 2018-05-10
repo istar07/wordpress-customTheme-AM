@@ -1,4 +1,4 @@
-/* Front Page styles */
+/* Front Page Styles */
 .front-page nav {
 	background: transparent;
 	border: none;
@@ -79,10 +79,6 @@
 
 	/*Third Feature*/
 
-	#third-feature {
-
-	}
-
 	#third-feature h3 {
 		font-size: 1.78571429em;
     	line-height: 1.5em;
@@ -145,3 +141,35 @@
 		color: #666666;
     	font-weight: 400;
 	}
+
+/* Footer Styles */
+footer {
+	padding-top: 4.95238095em;
+    padding-bottom: 4.95238095em;
+    background-color: #252525;
+}
+
+footer ul {
+	list-style: none;
+    line-height: 1.85714286em;
+    padding: 0;
+}
+footer li {
+	line-height: 2.32142857em;
+}
+
+footer li a {
+	opacity: .6;
+	color: #FFF;
+}
+
+footer li a:hover {
+	color: #FFF;
+	opacity: 1;
+	text-decoration: none;
+}
+
+footer .copyright {
+	margin-top: 10%;
+	color : #FFFFFF;
+}
