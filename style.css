@@ -28,7 +28,7 @@
 		color: white;
 	}
 
-	@media screen and (max-width: 767px) and (max-height: 812px) {
+	@media screen and (max-width: 991px) and (max-height: 812px) {
 		#first-feature {
 			height: 828px;
 		}
@@ -140,6 +140,7 @@
 
 /* Footer Styles */
 footer {
+	margin-top: 40px;
 	padding-top: 3em;
     padding-bottom: 4.95238095em;
     background-color: #252525;
@@ -240,7 +241,7 @@ border: none;
 	  border-radius: 4px;
 	}
 
-/* Product Styles */
+/* Product General Styles */
 
 .product-header {
   padding-top: 20px;
@@ -266,4 +267,23 @@ border: none;
 	margin-bottom: 20px;
 	padding: 15px;
 	background-color: #f5f5f5;
+	border-radius: 4px;
 }
+
+	/* Product Item Styles */
+	.product {
+		margin: 30px;
+	}
+
+	.product-post-title {
+		margin-left: 8px;
+		margin-bottom: 15px;
+		font-size: 40px;
+
+	}
+
+	@media screen and (max-width: 991px) and (max-height: 812px) {
+		.product .product-screenshot {
+			margin-bottom: 15px;
+		}
+	}
