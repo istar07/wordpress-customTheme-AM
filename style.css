@@ -20,10 +20,6 @@
 		background-size: cover;
 	}
 
-	#first-feature .jumbotron {
-		background: transparent;
-	}
-
 	#first-feature .jumbotron h1 {
 		font-weight: 300;
 		font-size: 3.14285714em;
@@ -172,4 +168,10 @@ footer li a:hover {
 footer .copyright {
 	margin-top: 10%;
 	color : #FFFFFF;
+}
+
+/* Site Wide General Styles */
+
+.jumbotron {
+	background: transparent;
 }
