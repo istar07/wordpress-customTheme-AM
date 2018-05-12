@@ -260,6 +260,10 @@ border: none;
 	border-radius: 4px;
 }
 
+.product-list-item * {
+	margin: 10px auto 20px auto;
+}
+
 	/* Product Item Styles */
 	.product {
 		margin: 30px;
