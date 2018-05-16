@@ -141,7 +141,7 @@
 footer {
 	margin-top: 40px;
 	padding-top: 3em;
-    padding-bottom: 4.95238095em;
+    padding-bottom: 1.2em;
     background-color: #252525;
 }
 
@@ -165,8 +165,14 @@ footer li a:hover {
 	text-decoration: none;
 }
 
+footer hr {
+	opacity: .6;
+	background-color :#FFF;
+}
+
 footer .copyright {
-	margin-top: 8%;
+	opacity: .6;
+	margin-top: 3%;
 	color : #FFFFFF;
 }
 
