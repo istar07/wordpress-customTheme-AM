@@ -16,7 +16,7 @@
 	/* First Feature */
 	#first-feature {
 		background-image: url(./images/cover.png);
-		height: 655px;
+		height: 690px;
 		background-size: cover;
 	}
 
@@ -27,6 +27,33 @@
 		line-height: 1.31818182em;
 		color: white;
 	}
+
+		/* First Feature Media Queries */
+
+			/* iPhone X */
+			@media only screen and (device-width: 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+				#first-feature {
+					height: 812px;
+				}
+
+				#first-feature .jumbotron h1 {
+					margin-top: 40%;
+				}
+			}
+
+			/* iPhone 6/7/8 */
+			@media only screen and (device-width: 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
+				#first-feature {
+					height: 667px;
+				}
+			}
+
+			/* iPhone 6/7/8 Plus */
+			@media only screen and (device-width: 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
+				#first-feature {
+					height: 736px;
+				}
+			}
 
 	/*Second Feature*/
 	#second-feature {
@@ -167,7 +194,8 @@ footer li a:hover {
 
 footer hr {
 	opacity: .6;
-	background-color :#FFF;
+	border: none;
+	border-bottom: 1px solid #FFF
 }
 
 footer .copyright {
@@ -183,10 +211,10 @@ footer .copyright {
 }
 
 hr {
-height: 1px;
 color: #123455;
 background-color: #123455;
 border: none;
+border-bottom: 1px solid #123455;
 }
 
 /* Blog Styles */
