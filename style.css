@@ -1,61 +1,70 @@
 /* Front Page Styles */
 .front-page nav {
+	z-index: 3;
+	position: absolute;
 	background: transparent;
 	border: none;
-	margin-top: 20px;
+	width: 100%;
+}
+
+.front-page .navbar-default {
+	
+}
+
+.front-page .navbar-default .navbar-nav > li > a {
+	margin-top: px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #DDDBE1;
 }
 
 .front-page .navbar-default .navbar-brand {
-	color: #FFFFFF;
+	font-weight: 100;
+	font-size: 20px;
+	color: #E3251C;
 }
 
 .front-page .navbar-default .navbar-nav > li > a:hover, .front-page .navbar-default .navbar-nav > li > a:focus {
-	color: #FFFFFF;
+	color: #E3251C;
 }
 
 	/* First Feature */
 	#first-feature {
-		background-image: url(./images/cover.png);
-		height: 690px;
-		background-size: cover;
+		height: 100%;
+		position: relative;
+		width: 100%;
 	}
 
-	#first-feature .jumbotron h1 {
+	#first-feature .jumbotron-feature {
+		min-height: 100%;
+		min-width: 100%;
+	}
+
+	#first-feature .jumbotron-feature .jumbotron-feature-text {
+		z-index: 2;
+		position: absolute;
+		top: 100px;
+		left: 480px;
+	}
+
+	#first-feature .jumbotron-feature .jumbotron-background-image img {
+		z-index: 1;
+		position: relative;
+		min-height: 100%;
+		min-width: 100%;
+	}
+
+	#first-feature .jumbotron-feature h1 {
 		font-weight: 300;
 		font-size: 3.14285714em;
-		margin-top: 15%;
+		margin-top: %;
 		line-height: 1.31818182em;
 		color: white;
 	}
 
-		/* First Feature Media Queries */
+		
 
-			/* iPhone X */
-			@media only screen and (device-width: 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-				#first-feature {
-					height: 812px;
-				}
-
-				#first-feature .jumbotron h1 {
-					margin-top: 40%;
-				}
-			}
-
-			/* iPhone 6/7/8 */
-			@media only screen and (device-width: 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
-				#first-feature {
-					height: 667px;
-				}
-			}
-
-			/* iPhone 6/7/8 Plus */
-			@media only screen and (device-width: 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
-				#first-feature {
-					height: 736px;
-				}
-			}
-
-	/*Second Feature*/
+	/* Second Feature */
 	#second-feature {
 		padding-top: 60px;
 		padding-bottom: 30px;
@@ -71,6 +80,39 @@
 	    padding: 0;
 	}
 
+	
+	
+	/* iPhone X */
+		@media only screen 
+		    and (device-width : 375px) 
+		    and (device-height : 812px) 
+		    and (-webkit-device-pixel-ratio : 3) {
+		    	#second-feature h2 {
+		    		margin-top: 22px;
+		    	}
+		    }
+
+	/* iPhone 6/7/8 */
+		@media only screen 
+		    and (device-width : 375px) 
+		    and (device-height : 667px) 
+		    and (-webkit-device-pixel-ratio : 2) {
+		    	#second-feature h2 {
+		    		margin-top: 22px;
+		    	}
+		    }
+
+	/* iPhone 6/7/8 Plus */
+		@media only screen 
+		    and (device-width : 414px) 
+		    and (device-height : 736px) 
+		    and (-webkit-device-pixel-ratio : 3) {
+		    	#second-feature h2 {
+		    		margin-top: 22px;
+		    	}
+		    }
+
+
 	#second-feature p {
 		margin-bottom: 1.36842105263158em;
 		font-weight: 400;
@@ -83,6 +125,7 @@
 		font-size: 0.85714286em;
     	line-height: 2.16666667em;
     	font-weight: 700;
+    	color: #E3251C;
 	}
 
 	#second-feature img {
@@ -90,7 +133,11 @@
 		box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
 	}
 
-	/*Third Feature*/
+	/* Third Feature */
+
+	#third-feature {
+		margin-top: 54px;
+	}
 
 	#third-feature h3 {
 		font-size: 1.78571429em;
@@ -101,8 +148,10 @@
 	}
 
 	#third-feature .text-block {
-		margin: 0 40px;
-		width: 100%;
+		position: relative;
+		float: left;
+		left: 42%;
+		transform: translate(-25%, -25%);
 		padding-top: 100px;
 	}
 
@@ -120,6 +169,10 @@
 		margin-left: 23% !important; 
 	}
 
+	.text-block #icon-4 {
+		margin-left: 18% !important;
+	}
+
 	#third-feature .text-block h4 {
 		margin-top: 0.6842105263158em;
 		margin-bottom: 0.3421052631579em;
@@ -128,7 +181,7 @@
     	color: #252525;
 	}
 
-	/*Fourth Feature*/
+	/* Fourth Feature */
 
 	#fourth-feature {
 		padding-top: 7.42857143em;
@@ -154,6 +207,11 @@
 	    border-width: 1px;
 	    font-size: inherit;
 	    line-height: 1.85714286em;
+	    background-color: #E3251C;
+	}
+
+	#fourth-feature #fourth-feature-btn:hover, #fourth-feature #fourth-feature-btn:focus {
+		background-color: #B1251C;
 	}
 
 	#fourth-feature p {
@@ -162,6 +220,14 @@
 		line-height: 1.85714286em;
 		color: #666666;
     	font-weight: 400;
+	}
+
+	#fourth-feature #email {
+		color: #E3251C;
+	}
+
+	#fourth-feature #email:hover, #fourth-feature #email:focus {
+		color: #B1251C;
 	}
 
 /* Footer Styles */
@@ -181,13 +247,17 @@ footer li {
 	line-height: 2.32142857em;
 }
 
-footer li a {
+footer a {
 	opacity: .6;
 	color: #FFF;
 }
 
-footer li a:hover {
-	color: #FFF;
+footer .social-media-links a {
+	font-size: 18px;
+}
+
+footer a:hover {
+	color: #E3251C;
 	opacity: 1;
 	text-decoration: none;
 }
@@ -206,15 +276,42 @@ footer .copyright {
 
 /* Site Wide General Styles */
 
+.navbar-inverse .navbar-nav > li > a {
+	margin-top: px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #DDDBE1;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+	font-weight: 100;
+	font-size: 20px;
+	color: #E3251C;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .front-page .navbar-default .navbar-nav > li > a:focus {
+	color: #E3251C;
+}
+
 .jumbotron {
 	background: transparent;
 }
 
 hr {
-color: #123455;
-background-color: #123455;
 border: none;
-border-bottom: 1px solid #123455;
+border-bottom: 1px solid #66251C;
+}
+
+a {
+	color: #91251C;
+}
+
+a:hover, a:focus {
+	color: #E3251C;
+}
+
+body {
+	background-color: #F6F6F6;
 }
 
 /* Blog Styles */
@@ -226,9 +323,31 @@ border-bottom: 1px solid #123455;
 .blog-title {
   margin-top: 30px;
   margin-bottom: 20px;
+  color: #91251C;
   font-size: 60px;
   font-weight: normal;
 }
+
+.blog-title:hover, .blog-title:focus {
+	color: #E3251C;
+}
+
+.blog-list > .blog-post-title {
+	color: #91251C;
+}
+
+.blog-list >.blog-post-title:hover,.blog-list > .blog-post-title:focus {
+	color: #E3251C;
+}
+
+.blog-post-meta a {
+	color: #91251C;
+}
+
+.blog-post-meta a:hover, .blog-post-meta a:focus {
+	color: #E3251C;
+}
+
 .blog-description {
   font-size: 20px;
   color: #999;
@@ -237,6 +356,11 @@ border-bottom: 1px solid #123455;
 .blog-post {
   margin-bottom: 60px;
 }
+
+.blog-post p {
+	font-size: 1.3em;
+}
+
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
@@ -256,7 +380,9 @@ border-bottom: 1px solid #123455;
 	justify-content: center;
 }
 
-
+.blog-main .blog-post-meta {
+	margin-bottom: 35px;
+}
 
 	/* Pagination */
 
@@ -299,8 +425,9 @@ border-bottom: 1px solid #123455;
 	margin: 10px;
 	margin-bottom: 20px;
 	padding: 15px;
-	background-color: #f5f5f5;
+	background-color: #FAFAFA;
 	border-radius: 4px;
+	box-shadow: 0 13px 40px rgba(0, 0, 0, 0.2);
 }
 
 .product-list-item * {
