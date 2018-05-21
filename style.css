@@ -443,9 +443,18 @@ body {
 
 	.product-post-title {
 		margin-left: 8px;
-		margin-bottom: 15px;
+		margin-bottom: 40px;
 		font-size: 40px;
 
+	}
+
+	.product-post-description p {
+		margin-bottom: 12px;
+		font-size: 18px;
+	}
+
+	.product-post-description p:last-of-type {
+		margin-bottom: 40px;
 	}
 
 	@media screen and (max-width: 991px), screen and (max-height: 812px) {
