@@ -1,55 +1,15 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="This is a custom WordPress Theme I am developing for my friend Anthony's site. Ideally, It will allow Anthony to make blog posts on a blog page, and showcase the apps he develops on a products page.">
-		<meta name="author" content="Warren McCoy Jr">
-		<title>AM-Custom-WordPress-Theme</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<!--Primary Container-->
-		<div id="main-container" class="front-page">
-			<!--First Feature-->
-			<div id="first-feature">
-					<!--Header Nav-->
-					<nav class="navbar navbar-default">
-						<div class="container">
-							<div class="col-md-12">
-								<div class="navbar-header">
-									<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#nav">
-										<span class="sr-only">Toggle Navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-									<a class="navbar-brand" href="#">AppsByMax</a>
-								</div>
-								<div class="collapse navbar-collapse navbar-right" id="nav">
-									<ul class="nav navbar-nav">
-										<li>
-											<a href="#">About Us</a>
-										</li>
-										<li>
-											<a href="blog.html">Tutorials</a>
-										</li>
-										<li>
-											<a href="product.html">Products</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					<!--/Header Nav-->
-					</nav>
+					<?php if(is_front_page()) {
+						get_header('front-page');
+					}
+					else 
+					{
+						get_header();
+					}?>
 					<!--Jumbotron Feature-->
 					
 						<div class="jumbotron-feature ">
 							<div class="jumbotron-background-image">
-								<img class="img-responsive" src="./images/tonyFO5682AA10214hs_d1450.jpg">
+								<img class="img-responsive" src="<?php bloginfo('template_url')?>/images/tonyFO5682AA10214hs_d1450.jpg">
 							</div>
 						</div>
 					<!--/Jumbotron Feature-->
@@ -129,23 +89,10 @@
 			<!--/Fourth Feature-->
 			</section>
 		</div>
-			<!--Footer-->
-			<footer>
-				<div class="container">
-					<div class="row">
-					<hr>
-					<p class="copyright">&copy; AppsByMax Inc. 2016 - 2018 - All Rights Reserved.</p>
-					<div class="social-media-links">
-						<a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href="#"><i class="fab fa-instagram"></i></a>
-					</div>
-				</div>
-			<!--/Footer-->
-			</footer>
-		<!--/Primary Container-->
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-		<script src="./javascript/am-theme-jquery.js"></script>
-	</body>
-</html>
+			<?php if(is_front_page()) {
+				get_footer('front-page');
+			}
+			else 
+			{
+				get_footer();
+			}?>

@@ -5,9 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content='Warren "Outte" McCoy Jr'>
 		<title><?php bloginfo('name'); ?></title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="style.css">
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -29,17 +26,14 @@
 									<a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
 								</div>
 								<div class="collapse navbar-collapse navbar-right" id="nav">
-									<ul class="nav navbar-nav">
-										<li>
-											<a href="#">About Us</a>
-										</li>
-										<li>
-											<a href="blog.html">Tutorials</a>
-										</li>
-										<li>
-											<a href="product.html">Products</a>
-										</li>
-									</ul>
+									<?php 
+
+									$args = array( 'theme_location' => 'primary',
+									'container' => 'ul',
+									'menu_class' => 'nav navbar-nav' );
+
+									?>
+									<?php wp_nav_menu( $args ); ?>
 								</div>
 							</div>
 						</div>
