@@ -1,6 +1,6 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 	// masonry.js
-   $('.grid').masonry({
+   jQuery('.grid').masonry({
 		// options
 		itemSelector: '.grid-item',
 		columnWidth: '.grid-sizer',

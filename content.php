@@ -6,7 +6,7 @@
 		            <?php if(has_post_thumbnail() ) {?>
 
 					<div class="col-md-3">
-		            	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive' ) ); ?></a>
+		            	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'banner-image', array( 'class' => 'img-responsive' ) ); ?></a>
 		            </div>
 
 		            <div class="col-md-9">
