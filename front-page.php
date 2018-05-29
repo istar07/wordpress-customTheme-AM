@@ -28,7 +28,7 @@
 						<div class="col-sm-6 col-md-6">
 							<h2>AppsByMax is a Maryland based software development, and training company.</h2>
 							<p>We pride ourselves on our diverse portfolio, including projects in the commercial, education, and e-commerce sectors.</p>
-							<a href="#">Learn More »</a>
+							<a href="<?php echo  esc_url(get_permalink( get_page_by_title( 'About Us' ) ) );?>">Learn More »</a>
 						</div>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 						<div class="col-md-8-offset-4">
 							<div class="fourth-feature-content">
 								<h2 class="">We would love to be of service to you. Fill out our contact form so we can understand your needs.</h2>
-								<a href="#" id="fourth-feature-btn" class="btn btn-primary">Contact Us</a>
+								<a href="<?php echo  esc_url(get_permalink( get_page_by_title( 'Contact Us' ) ) );?>" id="fourth-feature-btn" class="btn btn-primary">Contact Us</a>
 								<p>Or you can just send us an <a id="email" href="#">email.</a></p>
 							</div>
 						</div>
