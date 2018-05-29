@@ -52,7 +52,7 @@ function products_post_type() {
 		'edit_item'             => __( 'Edit Product', 'AM-Custom-WordPress-Theme' ),
 		'update_item'           => __( 'Update Product', 'AM-Custom-WordPress-Theme' ),
 		'view_item'             => __( 'View Product', 'AM-Custom-WordPress-Theme' ),
-		'view_items'            => __( 'View Items', 'AM-Custom-WordPress-Theme' ),
+		'view_items'            => __( 'View Products', 'AM-Custom-WordPress-Theme' ),
 		'search_items'          => __( 'Search products', 'AM-Custom-WordPress-Theme' ),
 		'not_found'             => __( 'No products found', 'AM-Custom-WordPress-Theme' ),
 		'not_found_in_trash'    => __( 'No products found in Trash', 'AM-Custom-WordPress-Theme' ),
