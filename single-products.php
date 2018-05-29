@@ -57,11 +57,11 @@
 
 				          <div class="product">
 				          <!--product-->
-				            <h1 class="product-post-title"><? the_title(); ?></h1>
+				            <h1 class="product-post-title text-center"><? the_title(); ?></h1>
 
 				            
 
-				            <div class="col-md-9">
+				            <div class="col-md-8 col-md-offset-2">
 				            	<div class="product-post-description">
 					            <!--product-description-->
 						            <?php the_content(  ); ?>
