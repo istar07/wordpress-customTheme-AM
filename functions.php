@@ -91,3 +91,52 @@ function products_post_type() {
 }
 add_action( 'init', 'products_post_type', 0 );
 
+// Social Media Settings
+function social_media_links_add_menu() {
+	add_menu_page( 'Social Media Links', 'Social Media Links', 'manage_options', 'social-media-links', 'social_media_links_page', null, 99 );
+}
+add_action( 'admin_menu', 'social_media_links_add_menu' );
+// Create Custom Social Media Settings
+function social_media_links_page() { ?>
+	<div class="wrap">
+		<h1>Social Media Links</h1>
+		<form method="post" action="options.php">
+			<?php
+				settings_fields( 'section' );
+				do_settings_sections( 'theme-options' );
+				submit_button();
+			?>
+		</form>
+	</div>
+<?php }
+// LinkedIn
+function setting_linkedin() { ?>
+		<input type="text" name="linkedin" id="linkedin" value="<?php echo get_option('linkedin'); ?>" />
+<?php }
+
+function setting_twitter() { ?>
+		<input type="text" name="twitter" id="twitter" value="<?php echo get_option('twitter'); ?>" />
+<?php }
+
+function setting_facebook() { ?>
+			<input type="text" name="facebook" id="facebook" value="<?php echo get_option('facebook'); ?>" />
+			<?php }
+
+function setting_instagram() { ?>
+			<input type="text" name="instagram" id="instagram" value="<?php echo get_option('instagram'); ?>" />
+			<?php }
+
+function social_media_links_page_setup() {
+	add_settings_section( 'section', 'All Settings', null, 'theme-options' );
+	add_settings_field( 'linkedin', 'LinkedIn URL', 'setting_linkedin', 'theme-options', 'section' );
+	add_settings_field( 'twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section' );
+	add_settings_field( 'facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section' );
+	add_settings_field( 'instagram', 'Instagram URL', 'setting_instagram', 'theme-options', 'section' );
+
+	register_setting('section','linkedin');
+	register_setting('section','twitter');
+	register_setting('section','facebook');
+	register_setting('section','instagram');
+
+}
+add_action( 'admin_init', 'social_media_links_page_setup' );
