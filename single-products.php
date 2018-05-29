@@ -40,7 +40,13 @@
 
 						            <?php if(metadata_exists( 'post', get_the_ID(), 'app-store-link' )) {?>
 
-						            <a href="<?php echo get_post_meta(get_the_ID(), 'app-store-link', TRUE);?>"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/200px-Download_on_the_App_Store_Badge.svg.png"></a>
+						            <a class="col-md-6" href="<?php echo get_post_meta(get_the_ID(), 'app-store-link', TRUE);?>"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/200px-Download_on_the_App_Store_Badge.svg.png"></a>
+
+						            <?php }?>
+
+						            <?php if(metadata_exists( 'post', get_the_ID(), 'google-play-store-link' )) {?>
+
+						            <a class="col-md-6" href="<?php echo get_post_meta(get_the_ID(), 'google-play-store-link', TRUE);?>"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Get_it_on_Google_play.svg/200px-Get_it_on_Google_play.svg.png"></a>
 
 						            <?php }?>
 					        	</div>
@@ -62,9 +68,17 @@
 
 						            <?php if(metadata_exists( 'post', get_the_ID(), 'app-store-link' )) {?>
 
-						            <a href="<?php echo get_post_meta(get_the_ID(), 'app-store-link', TRUE);?>"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/200px-Download_on_the_App_Store_Badge.svg.png"></a>
+						            <a class="col-md-6" href="<?php echo get_post_meta(get_the_ID(), 'app-store-link', TRUE);?>"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/200px-Download_on_the_App_Store_Badge.svg.png"></a>
 
 						            <?php }?>
+
+						            <?php if(metadata_exists( 'post', get_the_ID(), 'google-play-store-link' )) {?>
+
+						            <a class="col-md-6" href="<?php echo get_post_meta(get_the_ID(), 'google-play-store-link', TRUE);?>"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Get_it_on_Google_play.svg/200px-Get_it_on_Google_play.svg.png"></a>
+
+						            <?php }?>
+
+						            
 					        	</div>
 					        </div>
 				          </div>
