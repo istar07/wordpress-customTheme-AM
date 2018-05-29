@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-			<h1 class="text-center">Oh no, you 404'd =(</h1>
+			<h1 class="text-center">Oh no, you 404'd へ[ •́ ‸ •̀ ]ʋ</h1>
 			<br>
 			<h3 class="text-center">Unfortunately, the page you're looking for can't be found or doesn't exist.</h3>
 			<br>
