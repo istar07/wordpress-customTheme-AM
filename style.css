@@ -413,6 +413,31 @@ body {
 	  border-radius: 4px;
 	}
 
+	/* Disqus */
+
+	#disqus_thread {
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	@media (min-width: 768px) {
+  		#disqus_thread {
+    	width: 750px;
+  		}
+	}
+	@media (min-width: 992px) {
+  		#disqus_thread {
+   		width: 970px;
+  		}
+	}
+	@media (min-width: 1200px) {
+	  	#disqus_thread {
+	   	width: 1170px;
+	  	}
+	}
+
 /* Product General Styles */
 
 .product-header {
