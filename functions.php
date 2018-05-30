@@ -6,7 +6,7 @@ function appsbymax_scripts() {
 	wp_enqueue_style('style', get_stylesheet_uri());
 	wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 	wp_enqueue_script('masonry');
-	wp_enqueue_script('am-theme-jquery', get_template_directory_uri(). '/javascript/am-theme-jquery.js', array('jquery'), true );
+	wp_enqueue_script('am-theme-jquery', get_template_directory_uri(). '/javascript/appsbymax-theme-jquery.js', array('jquery'), true );
 
 }
 add_action('wp_enqueue_scripts', 'appsbymax_scripts' );
