@@ -34,9 +34,12 @@
 
 			        	
 		        	</div>
+		        	<div class="pager">
+		        		<?php echo paginate_links(); ?>
+		        	</div>
 		        <!--/product-list-->
 		        </section>
-		        <?php echo paginate_links(); ?>
+		        
 
 			</div>
 
