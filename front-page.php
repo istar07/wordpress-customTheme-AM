@@ -81,7 +81,7 @@
 							<div class="fourth-feature-content">
 								<h2 class="">We would love to be of service to you. Fill out our contact form so we can understand your needs.</h2>
 								<a href="<?php echo  esc_url(get_permalink( get_page_by_title( 'Contact Us' ) ) );?>" id="fourth-feature-btn" class="btn btn-primary">Contact Us</a>
-								<p>Or you can just send us an <a id="email" href="#">email.</a></p>
+								<p>Or you can just send us an <a id="email" href="mailto:customerservice@appsbymax.com">email.</a></p>
 							</div>
 						</div>
 					</div>
