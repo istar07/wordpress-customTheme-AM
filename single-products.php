@@ -21,7 +21,7 @@
 				          <!--product-->
 				            <h1 class="product-post-title"><? the_title(); ?></h1>
 
-				            <section class="product-screenshot col-md-3">
+				            <section class="product-screenshot col-md-4">
 				            <!--product-screenshot-->
 
 				            <?php
@@ -33,7 +33,7 @@
 				            <!--/product-screenshot-->
 				            </section>
 
-				            <div class="col-md-9">
+				            <div class="col-md-8">
 				            	<div class="product-post-description">
 					            <!--product-description-->
 						            <?php the_content(  ); ?>
