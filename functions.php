@@ -140,3 +140,19 @@ function social_media_links_page_setup() {
 
 }
 add_action( 'admin_init', 'social_media_links_page_setup' );
+
+function breezer_addDivToImage( $content ) {
+
+   // A regular expression of what to look for.
+   $pattern = '/(<img([^>]*)>)/i';
+   // What to replace it with. $1 refers to the content in the first 'capture group', in parentheses above
+   $replacement = '<div class="text-center">$1</div>';
+
+   // run preg_replace() on the $content
+   $content = preg_replace( $pattern, $replacement, $content );
+
+   // return the processed content
+   return $content;
+}
+
+add_filter( 'the_content', 'breezer_addDivToImage' );
