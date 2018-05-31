@@ -30,7 +30,11 @@
 			        		<!--/product-list-item-->
 			        		</div>
 			        	</div>
-			        	<?php endwhile; endif;?>
+			        	<?php endwhile;
+
+			        	else : echo '<p>No content found</p>';
+
+			        	 endif;?>
 
 			        	
 		        	</div>
