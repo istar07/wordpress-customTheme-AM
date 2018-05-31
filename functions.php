@@ -6,7 +6,7 @@ function appsbymax_scripts() {
 	wp_enqueue_style('style', get_stylesheet_uri());
 	wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 	wp_enqueue_script('masonry');
-	wp_enqueue_script('am-theme-jquery', get_template_directory_uri(). '/javascript/appsbymax-theme-jquery.js', array('jquery'), true );
+	wp_enqueue_script('appsbymax-theme-jquery', get_template_directory_uri(). '/javascript/appsbymax-theme-jquery.js', array('jquery'), true );
 
 }
 add_action('wp_enqueue_scripts', 'appsbymax_scripts' );
@@ -38,38 +38,38 @@ function ourWidgetsInit() {
 function products_post_type() {
 	// Set UI labels
 	$labels = array(
-		'name'                  => _x( 'Products', 'Post Type General Name', 'AM-Custom-WordPress-Theme' ),
-		'singular_name'         => _x( 'Product', 'Post Type Singular Name', 'AM-Custom-WordPress-Theme' ),
-		'menu_name'             => __( 'Products', 'AM-Custom-WordPress-Theme' ),
-		'name_admin_bar'        => __( 'Product', 'AM-Custom-WordPress-Theme' ),
-		'archives'              => __( 'Product Archives', 'AM-Custom-WordPress-Theme' ),
-		'attributes'            => __( 'Item Attributes', 'AM-Custom-WordPress-Theme' ),
-		'parent_item_colon'     => __( 'Parent Product:', 'AM-Custom-WordPress-Theme' ),
-		'all_items'             => __( 'All Products', 'AM-Custom-WordPress-Theme' ),
-		'add_new_item'          => __( 'Add New Product', 'AM-Custom-WordPress-Theme' ),
-		'add_new'               => __( 'New Product', 'AM-Custom-WordPress-Theme' ),
-		'new_item'              => __( 'New Item', 'AM-Custom-WordPress-Theme' ),
-		'edit_item'             => __( 'Edit Product', 'AM-Custom-WordPress-Theme' ),
-		'update_item'           => __( 'Update Product', 'AM-Custom-WordPress-Theme' ),
-		'view_item'             => __( 'View Product', 'AM-Custom-WordPress-Theme' ),
-		'view_items'            => __( 'View Products', 'AM-Custom-WordPress-Theme' ),
-		'search_items'          => __( 'Search products', 'AM-Custom-WordPress-Theme' ),
-		'not_found'             => __( 'No products found', 'AM-Custom-WordPress-Theme' ),
-		'not_found_in_trash'    => __( 'No products found in Trash', 'AM-Custom-WordPress-Theme' ),
-		'featured_image'        => __( 'Featured Image', 'AM-Custom-WordPress-Theme' ),
-		'set_featured_image'    => __( 'Set featured image', 'AM-Custom-WordPress-Theme' ),
-		'remove_featured_image' => __( 'Remove featured image', 'AM-Custom-WordPress-Theme' ),
-		'use_featured_image'    => __( 'Use as featured image', 'AM-Custom-WordPress-Theme' ),
-		'insert_into_item'      => __( 'Insert into item', 'AM-Custom-WordPress-Theme' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this item', 'AM-Custom-WordPress-Theme' ),
-		'items_list'            => __( 'Items list', 'AM-Custom-WordPress-Theme' ),
-		'items_list_navigation' => __( 'Items list navigation', 'AM-Custom-WordPress-Theme' ),
-		'filter_items_list'     => __( 'Filter items list', 'AM-Custom-WordPress-Theme' ),
+		'name'                  => _x( 'Products', 'Post Type General Name', 'AppsByMax' ),
+		'singular_name'         => _x( 'Product', 'Post Type Singular Name', 'AppsByMax' ),
+		'menu_name'             => __( 'Products', 'AppsByMax' ),
+		'name_admin_bar'        => __( 'Product', 'AppsByMax' ),
+		'archives'              => __( 'Product Archives', 'AppsByMax' ),
+		'attributes'            => __( 'Item Attributes', 'AppsByMax' ),
+		'parent_item_colon'     => __( 'Parent Product:', 'AppsByMax' ),
+		'all_items'             => __( 'All Products', 'AppsByMax' ),
+		'add_new_item'          => __( 'Add New Product', 'AppsByMax' ),
+		'add_new'               => __( 'New Product', 'AppsByMax' ),
+		'new_item'              => __( 'New Item', 'AppsByMax' ),
+		'edit_item'             => __( 'Edit Product', 'AppsByMax' ),
+		'update_item'           => __( 'Update Product', 'AppsByMax' ),
+		'view_item'             => __( 'View Product', 'AppsByMax' ),
+		'view_items'            => __( 'View Products', 'AppsByMax' ),
+		'search_items'          => __( 'Search products', 'AppsByMax' ),
+		'not_found'             => __( 'No products found', 'AppsByMax' ),
+		'not_found_in_trash'    => __( 'No products found in Trash', 'AppsByMax' ),
+		'featured_image'        => __( 'Featured Image', 'AppsByMax' ),
+		'set_featured_image'    => __( 'Set featured image', 'AppsByMax' ),
+		'remove_featured_image' => __( 'Remove featured image', 'AppsByMax' ),
+		'use_featured_image'    => __( 'Use as featured image', 'AppsByMax' ),
+		'insert_into_item'      => __( 'Insert into item', 'AppsByMax' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'AppsByMax' ),
+		'items_list'            => __( 'Items list', 'AppsByMax' ),
+		'items_list_navigation' => __( 'Items list navigation', 'AppsByMax' ),
+		'filter_items_list'     => __( 'Filter items list', 'AppsByMax' ),
 	);
 	// Set other options for Custom Post Type
 	$args = array(
-		'label'                 => __( 'Product', 'AM-Custom-WordPress-Theme' ),
-		'description'           => __( 'Products and Services', 'AM-Custom-WordPress-Theme' ),
+		'label'                 => __( 'Product', 'AppsByMax' ),
+		'description'           => __( 'Products and Services', 'AppsByMax' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
 		'taxonomies'            => array( 'product', ' service', ' app' ),
