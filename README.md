@@ -1,2 +1,2 @@
 # AM-Custom-WordPress-Theme
-This is a custom WordPress Theme I'm developing for a friend's site. Ideally, it will allow him to make blog posts on a blog page, and showcase the apps he develops on a products page.
+This is a custom WordPress Theme developed specifically for AppsByMax Inc. It will allow them to create blogs and tutorials as well as showcase their various apps and products. This theme was created to the specific specifications of AppsByMax Inc and may not be suitable for use by the general public. Please see the documentation for instructions on how to use this theme as intended.
