@@ -126,17 +126,23 @@ function setting_instagram() { ?>
 			<input type="text" name="instagram" id="instagram" value="<?php echo get_option('instagram'); ?>" />
 			<?php }
 
+function setting_youtube() { ?>
+			<input type="text" name="youtube" id="youtube" value="<?php echo get_option('youtube'); ?>" />
+			<?php }
+
 function social_media_links_page_setup() {
 	add_settings_section( 'section', 'All Settings', null, 'theme-options' );
 	add_settings_field( 'linkedin', 'LinkedIn URL', 'setting_linkedin', 'theme-options', 'section' );
 	add_settings_field( 'twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section' );
 	add_settings_field( 'facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section' );
 	add_settings_field( 'instagram', 'Instagram URL', 'setting_instagram', 'theme-options', 'section' );
+	add_settings_field( 'youtube', 'Youtube URL', 'setting_youtube', 'theme-options', 'section' );
 
 	register_setting('section','linkedin');
 	register_setting('section','twitter');
 	register_setting('section','facebook');
 	register_setting('section','instagram');
+	register_setting('section','youtube');
 
 }
 add_action( 'admin_init', 'social_media_links_page_setup' );
